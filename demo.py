@@ -36,7 +36,9 @@ st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
 def generate_llama2_response(prompt_input):
     string_dialogue = """i want you to be my programming teacher.be polite.
     ask me what language i need to learn. 
-    give me a road map then ask me to start then teach me each concept with snipet code and one example also hint to memorize."""
+    give me a road map then ask me to start then teach me each concept with snipet code and one example also hint to memorize.
+    ask me questions from the concept which you have teach as a MCQ type questions.
+    You should answer like a teacher."""
     for dict_message in st.session_state.messages:
         if dict_message["role"] == "user":
             string_dialogue += "User: " + dict_message["content"] + "\n\n"
