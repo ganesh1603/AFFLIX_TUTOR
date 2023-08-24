@@ -3,7 +3,7 @@ import replicate
 import os
 
 # App title
-st.set_page_config(page_title="MASHAN GPT",page_icon="🤖")
+st.set_page_config(page_title="MASHAN GPT",page_icon="❤️")
 
 # Replicate Credentials
 with st.sidebar:
