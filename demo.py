@@ -3,11 +3,11 @@ import replicate
 import os
 
 # App title
-st.set_page_config(page_title="MASHAN GPT",page_icon="❤️")
+st.set_page_config(page_title="DR.DOC",page_icon="🩺")
 
 # Replicate Credentials
 with st.sidebar:
-    st.title('PROGRAMMING VAATHI😮‍💨🤖')
+    st.title('DR.DOC🩺')
     if 'REPLICATE_API_TOKEN' in st.secrets:
         st.success('API key already provided!', icon='✅')
         replicate_api = st.secrets['REPLICATE_API_TOKEN']
